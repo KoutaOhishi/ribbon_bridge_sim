@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.4'>
   <model name="aerial_camera">
-    <pose>0 0 3 0 1.57 3.14</pose>
+    <pose>0 0 30 0 1.57 3.14</pose>
     <static>true</static>
 
     <link name="camera">
@@ -25,7 +25,8 @@
       <sensor type="camera" name="camera">
       <update_rate>30.0</update_rate>
       <camera name="head">
-        <horizontal_fov>1.3962634</horizontal_fov>
+        <!-- horizontal_fov>1.3962634</horizontal_fov -->
+	<horizontal_fov>1.57</horizontal_fov>
         <image>
           <width>4096</width>
           <height>2160</height>
