@@ -64,14 +64,14 @@ class Calculate():
         imgCenter_X = self.Width/2.0
         imgCenter_Y = self.Height/2.0
 
-        print imgCenter_X
-        print imgCenter_Y
+        #print imgCenter_X
+        #print imgCenter_Y
 
         w = self.Width * self.RibbonBridgeCenter_X / self.ImageWidth - imgCenter_X
         h = self.Height * self.RibbonBridgeCenter_Y / self.ImageHeight - imgCenter_Y
 
-        print "w(x):[%s]"%str(-w)
-        print "h(y):[%s]"%str(-h)
+        print "w(y):[%s]"%str(round(-w,3))
+        print "h(x):[%s]"%str(round(-h,3))
 
 
         print "-"

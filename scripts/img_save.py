@@ -24,8 +24,8 @@ def img_cb(msg):
 
 
         # windowサイズの調整
-        show_img_size = (cv_width/10, cv_height/10)
-        show_img = cv2.resize(cv_img, show_img_size)
+        #show_img_size = (cv_width/10, cv_height/10)
+        #show_img = cv2.resize(cv_img, show_img_size)
 
         now = datetime.datetime.now()
         now_str = now.strftime("%Y-%m-%d-%H:%M:%S")
@@ -35,9 +35,9 @@ def img_cb(msg):
 
 
         #cv2.imshow("window", show_img)
-        cv2.imwrite(file_path, show_img)
+        cv2.imwrite(file_path, cv_img)
         #cv2.waitKey(1)
-        print "finish"
+        print "Saved at [%s]."%file_path
         Saved_flag = True
 
 
