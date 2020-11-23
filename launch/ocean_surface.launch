@@ -10,7 +10,9 @@
    -->
   <!-- Command line arguments -->
 
-  <arg name="world" default="sandisland_buoys.world" />
+  <!--arg name="world" default="sandisland_buoys.world" /-->
+  <arg name="world" default="ribbon_bridge.world" />
+  
 
   <arg name="name" default="WAMV" />
   <arg name="imu" default="true" />
